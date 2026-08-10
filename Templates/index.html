@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#E2E8F0]">
+
+    <header>
+        <div class="flex flex-row justify-between items-center px-5 bg-white border-b border-[#C5C6CF]">
+            <!--Left side-->
+            <div class="">
+                <img src="/static/img/logo img 1 (1).png" 
+                alt=""
+                class="w-[200px] h-auto sm:w-[220px] md:w-[240px]">
+            </div>
+
+            <!--Right side-->
+            <div class="md:hidden">
+                <div class="menu-icon">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+
+            <!-- navbar For desktop-->
+            <div class=" flex-row gap-8 md:flex hidden">
+                <a href="">
+                    <P>Beranda</P>
+                </a>
+
+                <a href="">
+                    <P>Mesin</P>
+                </a>
+
+                <a href="">
+                    <P>Tentang Kami</P>
+                </a>
+
+                <a href="">
+                    <P>Proses</P>
+                </a>
+
+                <a href="">
+                    <P>Kontak</P>
+                </a>
+            </div>
+            
+            <!--Button penawaran kami-->
+            <a href="">
+                <div class="bg-[#FF6B00] font-semibold px-6 py-[10px]  flex-row items-center gap-2 hidden md:flex">
+
+                    <div class="icon-chat">
+                        <i data-lucide="message-square-text"></i>
+                    </div>
+
+                    <P class="text-white">
+                        Minta penawaran
+                    </P>
+                </div>
+            </a>
+            
+        </div>
+
+        
+    </header>
+
+    <main>
+        <section>
+            <div class="px-5 py-5 bg-white grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
+
+                <!-- LEFT : HERO CONTENT -->
+                <div class="px-5 py-5 flex flex-col gap-4">
+
+                    <!-- Header hero section -->
+                    <div class="flex flex-col gap-4">
+
+                        <div class="bg-[#E7E8EA] border border-[#C5C6CF] rounded-full flex flex-row w-fit px-3 py-2 gap-2 items-center">
+                            
+                            <div class="ancivment-icon">
+                                <i data-lucide="badge-check"></i>
+                            </div>
+
+                            <div>
+                                <p class="text-[12px] text-[#44474E]">
+                                    Industrial Pouch Filling Solutions
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="font-bold text-[28px] md:text-[36px] text-[#000516]">
+                            <p>
+                                Solusi Mesin Pouch <br>
+                                Filling untuk Berbagai <br>
+                                Kebutuhan Industri
+                            </p>
+                        </div>
+
+
+                        <div class="text-[18px] text-[#44474E]">
+                            <p class="leading-relaxed">
+                                Tingkatkan efisiensi produksi Anda
+                                dengan mesin pengisi kantong otomatis
+                                presisi tinggi. Dirancang tangguh untuk
+                                operasional nonstop 24/7.
+                            </p>
+                        </div>
+
+
+                        <div class="flex flex-col gap-3 md:flex-row">
+
+                            <button class="bg-[#DD6100] w-fit px-6 py-3 flex flex-row items-center gap-2">
+                                <p class="text-white">
+                                    Minta penawaran
+                                </p>
+
+                                <div class="right-icon ">
+                                    <i data-lucide="arrow-right"></i>
+                                </div>
+                            </button>
+
+                            <button class="border border-[#75777F] w-fit px-6 py-3">
+                                <p>
+                                    Lihat Katalog
+                                </p>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BENEFIT -->
+                    <div class="grid grid-cols-2 gap-5 border-t border-[#C5C6CF] pt-8 mt-auto">
+
+                        <div class="flex flex-row gap-1 items-center font-medium">
+                            <i data-lucide="award"></i>
+                            <p class="text-[14px]">
+                                Garansi 1 Tahun
+                            </p>
+                        </div>
+
+                        <div class="flex flex-row gap-1 items-center font-medium">
+                            <i data-lucide="wrench"></i>
+                            <p class="text-[14px]">
+                                Perawatan 1 Tahun
+                            </p>
+                        </div>
+
+                        <div class="flex flex-row gap-1 items-center font-medium">
+                            <i data-lucide="truck"></i>
+                            <p class="text-[14px]">
+                                Gratis Pengiriman
+                            </p>
+                        </div>
+
+                        <div class="flex flex-row gap-1 items-center font-medium">
+                            <i data-lucide="settings"></i>
+                            <p class="text-[14px]">
+                                Gratis Instalasi
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT : IMAGE -->
+                <!-- RIGHT / IMAGE -->
+                <div class="border border-[#C5C6CF] p-3 rounded-[8px]">
+
+                    <div class="relative rounded-[8px] overflow-hidden">
+
+                        <img
+                            src="/static/img/img hero section.png"
+                            alt="Mesin Pouch Filling IMJ"
+                            class="w-full h-auto object-contain"
+                        >
+
+                        <!-- Gradient -->
+                        <div class="absolute inset-0 pointer-events-none
+                                    bg-gradient-to-t
+                                    from-black/60
+                                    via-black/10
+                                    to-transparent">
+                        </div>
+
+                    </div>
+
+                </div>
+        </section>
+    </main>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

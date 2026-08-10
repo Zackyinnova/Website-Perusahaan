@@ -1,0 +1,21 @@
+*{
+    font-family: "Sora", sans-serif;
+}
+
+.icon-chat svg{
+    color:  white;
+    height: 20px;
+    width: 20px;
+}
+
+.ancivment-icon svg{
+    color: #DD6100;
+}
+
+.right-icon svg{
+    color: white;
+}
+
+.icon-benefit svg{
+    color: #DD6100;
+}

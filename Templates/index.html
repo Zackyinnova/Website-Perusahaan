@@ -17,7 +17,7 @@
 </head>
 <body class="bg-[#E2E8F0]">
 
-    <header class="sticky top-0">
+    <header class="sticky top-0 z-[50]">
         <div class="flex flex-row justify-between items-center px-5 bg-white border-b border-[#C5C6CF]">
             <!--Left side-->
             <div class="">
@@ -181,12 +181,12 @@
                 <!-- RIGHT : IMAGE -->
                 <div class="border border-[#C5C6CF] p-3 rounded-[8px]">
 
-                    <div class="relative rounded-[8px] overflow-hidden">
+                    <div class="relative rounded-[8px] z-[10] overflow-hidden">
 
                         <img
                             src="/static/img/img hero section.png"
                             alt="Mesin Pouch Filling IMJ"
-                            class="w-full h-auto object-contain"
+                            class="w-full h-auto object-contain "
                         >
 
                         <!-- Gradient -->
@@ -260,9 +260,29 @@
         <section>
             <div class="p-5 bg-white ">
                 <!-- header catalog-->
-                <div class=" flex md:flex-col md:items-center">
+                <div class=" flex flex-col items-center">
                     <P class="font-bold text-[28px]">Katalog Mesin</P>
-                    <P class="text-[16px] leading-relaxed text-balance">Jelajahi rangkaian solusi industri kami yang dirancang untuk kinerja optimal</P>
+                    <P class="text-[16px] leading-relaxed text-balance  text-center">Jelajahi rangkaian solusi industri kami yang dirancang untuk kinerja optimal</P>
+                </div>
+
+                <div class="btn-filter scrollbar-hide flex gap-3 overflow-x-auto py-4">
+
+                    <button class="items-filter bg-[#0B1E3D] text-white px-4 py-2 rounded-full">
+                        Semua
+                    </button>
+
+                    <button class="items-filter bg-white text-[#0B1E3D] px-4 py-2 rounded-full">
+                        Filling
+                    </button>
+
+                    <button class="items-filter bg-white text-[#0B1E3D] px-4 py-2 rounded-full">
+                        Packaging
+                    </button>
+
+                    <button class="items-filter bg-white text-[#0B1E3D] px-4 py-2 rounded-full">
+                        Labeling
+                    </button>
+
                 </div>
             </div>
         </section>
@@ -274,5 +294,7 @@
     <script>
         lucide.createIcons();
     </script>
+
+    <script src="/static/js/script.js"></script>
 </body>
 </html>

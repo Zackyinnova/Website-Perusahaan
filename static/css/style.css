@@ -20,6 +20,12 @@
     color: #DD6100;
 }
 
+.icon-page svg{
+    width: 20px;
+    height: 20px;
+    color: #44474E;
+}
+
 
 
 @keyframes marquee{

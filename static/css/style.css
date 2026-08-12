@@ -20,6 +20,8 @@
     color: #DD6100;
 }
 
+
+
 @keyframes marquee{
     from{
         transform: translateX(0);

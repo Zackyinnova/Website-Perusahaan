@@ -26,6 +26,20 @@
     color: #44474E;
 }
 
+.icon-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.icon-footer svg {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    color: white;
+    stroke-width: 2;
+}
 
 
 @keyframes marquee {

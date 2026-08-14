@@ -35,25 +35,18 @@
 
             <!-- navbar For desktop-->
             <div class=" flex-row gap-8 md:flex hidden">
-                <a href="">
+                <a href="#beranda">
                     <P>Beranda</P>
                 </a>
 
-                <a href="">
+                <a href="#catalog">
                     <P>Mesin</P>
                 </a>
 
-                <a href="">
+                <a href="#aboutme">
                     <P>Tentang Kami</P>
                 </a>
 
-                <a href="">
-                    <P>Proses</P>
-                </a>
-
-                <a href="">
-                    <P>Kontak</P>
-                </a>
             </div>
             
             <!--Button penawaran kami-->
@@ -78,8 +71,8 @@
     </header>
 
     <main class="w-full min-h-screen">
-        <section>
-            <div class="px-5 py-5 bg-white grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
+        <section id="beranda" class="scroll-mt-[120px]">
+            <div class="px-5 py-5  bg-white grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
 
                 <!-- LEFT : HERO CONTENT -->
                 <div class="px-5 py-5 flex flex-col gap-4">
@@ -122,22 +115,26 @@
 
 
                         <div class="flex flex-col gap-3 md:flex-row">
+                            <a href="https://wa.me/6287884246944?text=Halo%20Admin%20IMJ%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20produksi%20saya.%20Apakah%20saya%20bisa%20mendapatkan%20informasi%20lebih%20lanjut%3F">
+                                <button class="bg-[#DD6100] w-fit px-6 py-3 flex flex-row items-center gap-2">
+                                    <p class="text-white">
+                                        Minta penawaran
+                                    </p>
 
-                            <button class="bg-[#DD6100] w-fit px-6 py-3 flex flex-row items-center gap-2">
-                                <p class="text-white">
-                                    Minta penawaran
-                                </p>
+                                    <div class="right-icon ">
+                                        <i data-lucide="arrow-right"></i>
+                                    </div>
+                                </button>
+                            </a>
 
-                                <div class="right-icon ">
-                                    <i data-lucide="arrow-right"></i>
-                                </div>
-                            </button>
-
-                            <button class="border border-[#75777F] w-fit px-6 py-3">
-                                <p>
-                                    Lihat Katalog
-                                </p>
-                            </button>
+                            <a href="#catalog">
+                                <button class="border border-[#75777F] w-fit px-6 py-3">
+                                    <p>
+                                        Lihat Katalog
+                                    </p>
+                                </button>
+                            </a>
+                        
 
                         </div>
 
@@ -283,7 +280,7 @@
         </section>
 
         <!--catalog-->
-        <section>
+        <section id="catalog" class="scroll-mt-[120px]">
             <div class="p-5 pt-10 pb-5 bg-white">
                 <!-- header catalog-->
                 <div class=" flex flex-col items-center">
@@ -507,7 +504,7 @@
         </section>
 
         <!--Tentang Kami-->
-        <section>
+        <section id="aboutme" class="scroll-mt-[120px]">
             <div class="p-5 bg-white flex flex-col gap-6 md:gap-[48px] md:flex-row">
                 <!--Header About Me-->
                 <div class="flex flex-col w-full justify-center items-center gap-3">
@@ -554,15 +551,15 @@
     </main>
 
     <footer>
-        <div class="bg-[#000516] p-5 flex flex-col md:flex-row gap-10">
+        <div class="bg-[#000516] p-5 flex flex-col md:flex-row md:pb-10 gap-10">
             <!--Company Profile-->
             <div class="w-full  flex justify-center items-center flex-col ">
                 <img src="static/img/logo img 1 (1).png" 
                     alt="company logo"
-                    class="w-[80%] h-auto object-contain">
+                    class="w-[70%] sm:w-[50%] md:w-[220px] lg:w-[240px] h-auto object-contain">
                 
                 <div class="">
-                    <P class="text-justify text-[14px] text-[#7686AB]">PT. Inti Mesindo Jaya (IMJ) is an Indonesia-based industrial machinery company specializing in filling, packaging, labeling, cartoning, and processing solutions for various industries.</P>
+                    <P class="text-justify text-[14px] text-white">PT. Inti Mesindo Jaya (IMJ) is an Indonesia-based industrial machinery company specializing in filling, packaging, labeling, cartoning, and processing solutions for various industries.</P>
                 </div>
             </div>
 
@@ -601,34 +598,34 @@
                 <div class=" mt-2 flex flex-col items-start gap-1">
                     <div class="flex items-start gap-4">
                         <span class="text-[#DD6100]">•</span>
-                        <span class="whitespace-nowrap text-white md:text-[17px]">
-                            CAPSULE FILLING MACHINE
+                        <span class="whitespace-nowrap text-white">
+                            Capsule Filling Machine
                         </span>
                     </div> 
 
                     <div class="flex items-start gap-4">
                         <span class="text-[#DD6100]">•</span>
-                        <span class="whitespace-nowrap text-white md:text-[17px]">
-                            FILLING FOR BOTTLE
+                        <span class="whitespace-nowrap text-white ">
+                            Filling For Bottle
                         </span>
                     </div> 
 
                     <div class="flex items-start gap-4">
                         <span class="text-[#DD6100]">•</span>
-                        <span class="whitespace-nowrap text-white md:text-[17px]">
-                            POUCH FILLING
+                        <span class="whitespace-nowrap text-white">
+                            Pouch Filling
                         </span>
                     </div> 
 
                     <div class="flex items-start gap-4">
                         <span class="text-[#DD6100]">•</span>
-                        <span class="whitespace-nowrap text-white md:text-[17px]">
-                            SLEEVE SHRINK MACHINE
+                        <span class="whitespace-nowrap text-white">
+                            Sleeve Shrink Machine
                         </span>
                     </div>
                     <div class="flex items-start gap-4">
                         <span class="text-[#DD6100]">•</span>
-                        <span class="whitespace-nowrap text-white md:text-[17px]">
+                        <span class="whitespace-nowrap text-white">
                             And More
                         </span>
                     </div> 
@@ -638,7 +635,7 @@
             <div class="w-full  flex justify-center items-center flex-col ">
                 
                 <div class="">
-                    <P class="text-center text-[14px] text-[#7686AB]">
+                    <P class="text-center text-[14px] text-white">
                         © 2024 IMJ Pouch Filling Machines. All Rights Reserved.</P>
                 </div>
             </div>

@@ -17,17 +17,17 @@
 </head>
 <body class="bg-[#E2E8F0]">
 
-    <header class="sticky top-0 z-[50] bg-white">
-        <div class="flex flex-row justify-between items-center px-5 bg-white">
+    <header class="sticky top-0 z-[20] bg-white border-b border-[#C5C6CF]">
+        <div class="flex flex-row justify-between items-center px-5 py-5 bg-white">
             <!--Left side-->
             <div class="">
-                <img src="static/img/logo img 1 (1).png" 
+                <img src="static/img/revisi logo.png" 
                 alt=""
-                class="w-[200px] h-auto sm:w-[220px] md:w-[240px]">
+                class="w-[130px] h-auto sm:w-[150px] md:w-[150px]">
             </div>
-
+            <!--40 20-->
             <!--Right side-->
-            <div class="md:hidden">
+            <div class="md:hidden" id="btn-navbar">
                 <div class="menu-icon">
                     <i data-lucide="menu"></i>
                 </div>
@@ -45,6 +45,10 @@
 
                 <a href="#aboutme">
                     <P>Tentang Kami</P>
+                </a>
+
+                <a href="Templates/galeri.html">
+                    <P>Galeri</P>
                 </a>
 
             </div>
@@ -411,6 +415,25 @@
                             class="w-full h-auto object-contain"
                         >
 
+                        <P class="text-[20px] text-wrap font-bold">Filling rotary</P>
+
+                        <P class="text-[14px] text-[#44474E] text-justify">
+                                Pouch Filling Packaging Machine merupakan mesin otomatis untuk mengisi berbagai 
+                                jenis produk ke dalam pouch, kemudian menyegelnya dengan panas dan mengeluarkannya 
+                                secara otomatis. Mendukung berbagai jenis pouch seperti spout, zipper, dan slide zipper.
+                        </P>
+                    </div>
+
+                    <!-- produk 6-->
+                    <div class="p-5 md:p-10 rounded- flex flex-col gap-5 border border-[#C5C6CF]"
+                        data-value="Filling">
+                        <!--IMG-->
+                        <img
+                            src="static/img/catalog_img/Pouch Filling.png"
+                            alt="Mesin Pouch Filling IMJ"
+                            class="w-full h-auto object-contain"
+                        >
+
                         <P class="text-[20px] text-wrap font-bold">Pouch Filling</P>
 
                         <P class="text-[14px] text-[#44474E] text-justify">
@@ -503,47 +526,94 @@
             </div>
         </section>
 
-        <!--Tentang Kami-->
-        <section id="aboutme" class="scroll-mt-[120px]">
-            <div class="p-5 bg-white flex flex-col gap-6 md:gap-[48px] md:flex-row">
-                <!--Header About Me-->
-                <div class="flex flex-col w-full justify-center items-center gap-3">
-                    <p class="font-semibold text-[32px]">Tentang Kami</p>
+        <!-- Tentang Kami -->
+        <section id="about" class="scroll-mt-[120px]">
 
-                    <P class="text-justify text-[16px] text-[#44474E] ">
-                        PT. Inti Mesindo Jaya (IMJ) menyediakan solusi mesin industri 
+            <div class="p-5 md:p-10 bg-white flex flex-col gap-8 md:flex-row md:items-center md:gap-12">
+
+                <!-- About Text -->
+                <div class="w-full md:w-1/2 flex flex-col gap-4">
+
+                    <!-- Heading -->
+                    <div>
+                        <p class="font-bold text-[28px] md:text-[32px] text-[#000516]">
+                            Tentang Kami
+                        </p>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-[16px] leading-relaxed text-[#44474E] text-justify">
+                        PT. Inti Mesindo Jaya (IMJ) menyediakan solusi mesin industri
                         untuk membantu meningkatkan efisiensi proses produksi dan pengemasan.
                         Dengan berbagai pilihan mesin filling, packaging, labeling, cartoning,
-                         hingga processing, kami siap memberikan solusi yang sesuai dengan kebutuhan 
+                        hingga processing, kami siap memberikan solusi yang sesuai dengan kebutuhan
                         industri, didukung layanan teknis dan purna jual yang profesional.
-                    </P>
+                    </p>
+
                 </div>
 
-                <!-- count costumer-->
-                 <div class="w-full grid grid-cols-2 gap-6 ">
-                    <div class="bg-[#EDEEF0] py-6 w-full border border-[#C5C6CF] text-center">
-                        <P class="text-[#FF6B00] font-bold text-[48px]">15+</P>
-                        <p class="font-semibold text-[14px]">Tahun Pengalaman</p>
+
+                <!-- Statistics -->
+                <div class="w-full md:w-1/2 grid grid-cols-2 gap-4 md:gap-6">
+
+                    <!-- Tahun Pengalaman -->
+                    <div class="bg-[#EDEEF0] py-6 md:py-8 w-full border border-[#C5C6CF] text-center rounded-[8px]">
+
+                        <p class="text-[#FF6B00] font-bold text-[40px] md:text-[48px]">
+                            <span class="counter" data-target="5">0</span>+
+                        </p>
+
+                        <p class="font-semibold text-[14px] md:text-[15px] text-[#000516]">
+                            Tahun Pengalaman
+                        </p>
+
                     </div>
 
-                    <div class="bg-[#EDEEF0] py-6 w-full border border-[#C5C6CF] text-center">
-                        <P class="text-[#FF6B00] font-bold text-[48px]">50+</P>
-                        <p class="font-semibold text-[14px]">Klien Puas</p>
+
+                    <!-- Klien Puas -->
+                    <div class="bg-[#EDEEF0] py-6 md:py-8 w-full border border-[#C5C6CF] text-center rounded-[8px]">
+
+                        <p class="text-[#FF6B00] font-bold text-[40px] md:text-[48px]">
+                            <span class="counter" data-target="50">0</span>+
+                        </p>
+
+                        <p class="font-semibold text-[14px] md:text-[15px] text-[#000516]">
+                            Klien Puas
+                        </p>
+
                     </div>
 
-                    <div class="bg-[#EDEEF0] py-6 w-full border border-[#C5C6CF] text-center">
-                        <P class="text-[#FF6B00] font-bold text-[48px]">20+</P>
-                        <p class="font-semibold text-[14px]">Daerah Pengguna</p>
+
+                    <!-- Daerah Pengguna -->
+                    <div class="bg-[#EDEEF0] py-6 md:py-8 w-full border border-[#C5C6CF] text-center rounded-[8px]">
+
+                        <p class="text-[#FF6B00] font-bold text-[40px] md:text-[48px]">
+                            <span class="counter" data-target="20">0</span>+
+                        </p>
+
+                        <p class="font-semibold text-[14px] md:text-[15px] text-[#000516]">
+                            Daerah Pengguna
+                        </p>
+
                     </div>
 
-                    <div class="bg-[#EDEEF0] py-6 w-full border border-[#C5C6CF] text-center">
-                        <P class="text-[#FF6B00] font-bold text-[48px]">24/7</P>
-                        <p class="font-semibold text-[14px]">Dukungan Teknis</p>
+
+                    <!-- Dukungan Teknis -->
+                    <div class="bg-[#EDEEF0] py-6 md:py-8 w-full border border-[#C5C6CF] text-center rounded-[8px]">
+
+                        <p class="text-[#FF6B00] font-bold text-[40px] md:text-[48px]">
+                            24/7
+                        </p>
+
+                        <p class="font-semibold text-[14px] md:text-[15px] text-[#000516]">
+                            Dukungan Teknis
+                        </p>
+
                     </div>
 
-                 </div>
+                </div>
+
             </div>
-
 
         </section>
 
@@ -554,7 +624,7 @@
         <div class="bg-[#000516] p-5 flex flex-col md:flex-row md:pb-10 gap-10">
             <!--Company Profile-->
             <div class="w-full  flex justify-center items-center flex-col ">
-                <img src="static/img/logo img 1 (1).png" 
+                <img src="static/img/revisi logo white.png" 
                     alt="company logo"
                     class="w-[70%] sm:w-[50%] md:w-[220px] lg:w-[240px] h-auto object-contain">
                 
@@ -643,6 +713,36 @@
         </div>
     </footer>
 
+    <!--Overlay Navbar-->
+    <div  class="bg-black/55 w-full h-full fixed  top-0 hidden  items-center z-[30]" id="overlay-navbar">
+        <div class=" flex flex-col gap-8 bg-white h-full w-[64%]  p-5 text-10">
+            <!--Logo imj-->
+            <div class="border-b border-[#C5C6CF] flex justify-center pb-5 bg-transparent">
+                <img src="static/img/revisi logo.png" 
+                alt=""
+                class="w-[130px] h-auto sm:w-[170px] md:w-[190px]">
+            </div>
+
+            <!--Navigation-->
+            <div class=" flex flex-col gap-4">
+                <a href="#beranda">
+                    <p class="font-semibold">Beranda</p>
+                </a>
+
+                <a href="#catalog">                    
+                    <P class="font-semibold">Mesin</P>
+                </a>
+
+                <a href="#aboutme">
+                    <P class="font-semibold">Tentang Kami</P>
+                </a>
+
+                <a href="#aboutme">
+                    <P class="font-semibold">Galeri</P>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script>
         lucide.createIcons();

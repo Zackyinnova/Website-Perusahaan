@@ -123,3 +123,25 @@ window.addEventListener("resize", renderPagination);
 
 // jalankan pertama kali saat halaman dimuat
 renderPagination();
+
+
+const overlayNavbar = document.getElementById("overlay-navbar");
+const btnNavbar = document.getElementById("btn-navbar");
+
+btnNavbar.addEventListener("click", () =>{
+    overlayNavbar.style.display = "flex";
+});
+
+overlayNavbar.addEventListener("click", (e) =>{
+    if(e.target === overlayNavbar){
+        overlayNavbar.style.display = "none";
+    }
+});
+
+const navbarLinks = overlayNavbar.querySelectorAll("a");
+
+navbarLinks.forEach((link) =>{
+    link.addEventListener("click",() =>{
+        overlayNavbar.style.display = "none";
+    });
+});

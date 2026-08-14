@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body class="bg-[#E2E8F0]">
+    <header class="sticky top-0 z-[20] bg-white border-b border-[#C5C6CF]">
+        <div class="flex flex-row justify-between items-center px-5 py-5 bg-white">
+            <!--Left side-->
+            <div class="">
+                <img src="../static/img/revisi logo.png" 
+                alt=""
+                class="w-[130px] h-auto sm:w-[150px] md:w-[150px]">
+            </div>
+
+            <!--Right side-->
+            <div class="md:hidden" id="btn-navbar">
+                <div class="menu-icon">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+
+            <!-- navbar For desktop-->
+            <div class=" flex-row gap-8 md:flex hidden">
+                <a href="/index.html#beranda">
+                    <P>Beranda</P>
+                </a>
+
+                <a href="/index.html#catalog">
+                    <P>Mesin</P>
+                </a>
+
+                <a href="/index.html#aboutme">
+                    <P>Tentang Kami</P>
+                </a>
+
+                <a href="../Templates/galeri.html">
+                    <P>Galeri</P>
+                </a>
+
+            </div>
+            
+            <!--Button penawaran kami-->
+            <a  href="https://wa.me/6287884246944?text=Halo%20Admin%20IMJ%2C%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20produksi%20saya.%20Apakah%20saya%20bisa%20mendapatkan%20informasi%20lebih%20lanjut%3F"
+                target="_blank"
+             class="hidden md:block">
+                <div class="bg-[#FF6B00] font-semibold px-6 py-[10px]  flex-row items-center gap-2 md:flex">
+
+                    <div class="icon-chat">
+                        <i data-lucide="message-square-text"></i>
+                    </div>
+
+                    <P class="text-white">
+                        Minta penawaran
+                    </P>
+                </div>
+            </a>
+            
+        </div>
+
+    </header>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

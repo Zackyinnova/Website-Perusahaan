@@ -536,13 +536,18 @@
 
                 <!--btn pagenation-->
                 <div class="btn-page w-full flex flex-row justify-center items-center gap-2 py-5">
-                    <button id="prevPage" class="icon-page flex border border-[#C5C6CF] p-2">
+                    <button id="prevPage"
+                            aria-label="Halaman Sebelumnya"        
+                    class="icon-page flex border border-[#C5C6CF] p-2">
+                        
                         <i data-lucide="chevron-left"></i>
                     </button>
 
                     <div id="pageNumbers" class="flex flex-row gap-2"></div>
 
-                    <button id="nextPage" class="icon-page border border-[#C5C6CF] p-2">
+                    <button id="nextPage"
+                            aria-label="Halaman sesudahnya"
+                        class="icon-page border border-[#C5C6CF] p-2">
                         <i data-lucide="chevron-right"></i>
                     </button>
                 </div>

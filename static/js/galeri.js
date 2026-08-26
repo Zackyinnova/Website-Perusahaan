@@ -171,45 +171,37 @@ function renderPagination() {
     pageNumbers.innerHTML = "";
 
 
-    for (let i = 1; i <= totalPages; i++) {
+    // ====================================
+    // BUAT NOMOR PAGE
+    // ====================================
 
-        const button = document.createElement("button");
+    pageNumbers.innerHTML = "";
 
-        button.textContent = i;
+    const maxVisiblePages = 2;
 
-        button.className =
-            "px-4 py-2 border border-[#C5C6CF]";
+    if (totalPages <= maxVisiblePages + 1) {
 
-
-        // Active page
-        if (i === currentPage) {
-
-            button.classList.add(
-                "bg-[#0B1E3D]",
-                "text-white"
-            );
-
-        } else {
-
-            button.classList.add(
-                "bg-white",
-                "text-[#0B1E3D]"
-            );
-
+        // Kalau halaman sedikit, tampilkan semuanya
+        for (let i = 1; i <= totalPages; i++) {
+            createPageButton(i);
         }
 
+    } else {
 
-        button.addEventListener("click", () => {
+        // Tampilkan halaman 1 - 5
+        for (let i = 1; i <= maxVisiblePages; i++) {
+            createPageButton(i);
+        }
 
-            currentPage = i;
+        // Titik-titik
+        const dots = document.createElement("span");
+        dots.textContent = "...";
+        dots.className = "px-3 py-2 text-[#0B1E3D]";
 
-            renderPagination();
+        pageNumbers.appendChild(dots);
 
-        });
-
-
-        pageNumbers.appendChild(button);
-
+        // Halaman terakhir
+        createPageButton(totalPages);
     }
 
 
@@ -286,6 +278,42 @@ window.addEventListener("resize", () => {
 
 });
 
+
+function createPageButton(page) {
+
+    const button = document.createElement("button");
+
+    button.textContent = page;
+
+    button.className =
+        "px-4 py-2 border border-[#C5C6CF]";
+
+    // Active page
+    if (page === currentPage) {
+
+        button.classList.add(
+            "bg-[#0B1E3D]",
+            "text-white"
+        );
+
+    } else {
+
+        button.classList.add(
+            "bg-white",
+            "text-[#0B1E3D]"
+        );
+    }
+
+    button.addEventListener("click", () => {
+
+        currentPage = page;
+
+        renderPagination();
+
+    });
+
+    pageNumbers.appendChild(button);
+}
 
 // ========================================
 // INITIAL LOAD

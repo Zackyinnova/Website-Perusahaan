@@ -341,3 +341,4 @@ navbarLinks.forEach((link) =>{
         overlayNavbar.style.display = "none";
     });
 });
+

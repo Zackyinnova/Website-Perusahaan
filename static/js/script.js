@@ -145,3 +145,20 @@ navbarLinks.forEach((link) =>{
         overlayNavbar.style.display = "none";
     });
 });
+
+
+const cards = document.querySelectorAll(".card-catalog");
+
+cards.forEach((card) => {
+
+    card.style.transition = "transform 0.3s ease";
+
+    card.addEventListener("mouseenter", () => {
+        card.style.transform = "translate(-2px, -2px)";
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "translate(0, 0)";
+    });
+
+});
